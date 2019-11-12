@@ -179,7 +179,7 @@ func ConfigureQorResourceDynamoDB(r resource.Resourcer) {
 				customerTMP.ID = newUUID.String()
 				customerTMP.CreatedAtTime = time.Now()
 			}
-			// customerTMP.UpdatedAtTime = time.Now()
+			customerTMP.UpdatedAtTime = time.Now()
 
 			input := &dynamodb.UpdateItemInput{
 				ExpressionAttributeNames: map[string]*string{
