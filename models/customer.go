@@ -52,9 +52,8 @@ func ConfigureQorResourceDynamoDB(r resource.Resourcer) {
 	// Configure resource with DynamoDB
 	tableName := "Customers"
 	config := &aws.Config{
-		Region:   aws.String("us-west-2"),
-		// Endpoint: aws.String("192.168.1.91:8000"),
-		Endpoint: aws.String("http://localhost:8000"),
+		Endpoint: aws.String("http://dynamodb:8000"), 
+		// Endpoint: aws.String("http://localhost:8000"),
 	}
 
 	// Create DynamoDB client

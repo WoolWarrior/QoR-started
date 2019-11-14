@@ -21,5 +21,9 @@ RUN go build -o main .
 # Expose port 8080 to the outside world
 EXPOSE 8080
 
+# ENV AWS_ACCESS_KEY_ID dummy
+# ENV AWS_SECRET_ACCESS_KEY dummy
+# ENV AWS_REGION us-east-1
+
 # Command to run the executable
 CMD ["./main"]
